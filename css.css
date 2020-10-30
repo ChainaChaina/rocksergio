@@ -1,0 +1,64 @@
+body{
+    margin: 0%;
+    max-width: 100vh;
+    
+    text-align: center;
+    min-height: 350px;
+    background-color: black;
+    overflow: hidden;
+    
+    
+}
+.tmm{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.back{
+    position: relative;
+    z-index: -999999;
+    align-self: center;
+   
+}
+h1, h4{ 
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    position: relative;
+    bottom: 130px;
+}
+
+.back2{
+    position: relative;
+    bottom: 350px;
+    z-index: +999999;
+    align-self: center;
+    animation-name: roda;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+   
+}
+.sergio{
+    width: 85%;
+    position: relative;
+    margin-bottom: 50%;
+    z-index: 999;
+    
+    
+}
+
+@keyframes roda{
+    0%     {margin:10px;  -moz-transform: rotate(10deg); }
+    10%     {margin:12px;  }
+    20%     {margin:14px;  -moz-transform: rotate(-10deg);}
+    30%     {margin:9px;  }
+    40%     {margin:12px;  -moz-transform: rotate(5deg);}
+    50%     {margin:14px;  }
+  60%      {margin:9px;  }
+  70%      {margin:6px;  -moz-transform: rotate(-5deg);}
+  80%      {margin:12px;  }
+  90%      {margin:10px;  }
+  100%     {margin:2px;  -moz-transform: rotate(8deg);}
+}
